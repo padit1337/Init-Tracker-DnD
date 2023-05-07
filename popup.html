@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>DnD Initiative Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="popup.js"></script>
+</head>
+<body>
+  <h1>DnD Initiative Tracker</h1>
+  <form id="player-form">
+    <label for="player-name">Name:</label>
+    <input type="text" id="player-name" name="player-name">
+    <label for="initiative">Initiative:</label>
+    <input type="number" id="initiative" name="initiative">
+    <p>In case multiple players have the same initiative, the first entry is ranked highest etc.</p>
+    <button type="submit">Add</button>
+  </form>
+  <div id="player-list"></div>
+  <button id="next-turn" disabled>Next Turn</button>
+  <button id="reset">Reset</button>
+</body>
+</html>
